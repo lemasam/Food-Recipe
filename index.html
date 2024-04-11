@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Ingredient For Your Meal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class='meal-wrap'>
+            <div class="meal-search">
+                <h2 class="title">Discover The Necessary items for your Recipe!</h2>
+                <blockquote>Food is <strong>Ingredient</strong> that binds us <em>together!</em></blockquote>
+                 <div class="meal-search-box">
+                    <input type="s" class="search-content" placeholder="Enter a meal" id ="search-input">
+                    <button  type="submit" class="search-btn btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                 </div>
+            </div>
+            <div class=" meal-result">
+                <h2 class="title">Your Search:</h2>
+                <div id="meal">
+
+                    <!-- meal-item -->
+                    <!-- <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="images/burger.png" alt="food">
+                        </div>
+                            <div class="meal-name">
+                                <h3>Beef Burger</h3>
+                                <a href="#" class="recipe-btn"> Recipe</a>
+                            </div>
+                        </div> -->
+                    <!-- end of meal iteam -->
+                    
+                </div>
+            </div>
+            <div class="meal-details">
+                <button type="button" class="btn recipe-close-btn" id ="recipe-close-btn" id="recipe-close-btn">
+                <i class="fas fa-times"></i>
+                </button>
+            <!-- meal content -->
+            <div class="meal-details-content">
+                <h2 class="recipe-title">Meal Name Here:</h2>
+                <p class="recipe-category">Category</p>
+                <div class="recipe-instruct">
+                    <h3>Instruction</h3>
+                    <p>250g flour
+150ml warm water
+1tSP salt
+5.5g Saf Instant dry yeast
+30g soft butter
+150g minced steack x 4
+1 tomato puree
+1 tomato
+4 slice of melting cheese
+4 lettuce
+½ parsley bunch
+1 onion puree
+3 garlic clove
+1 tSP black pepper
+Tomato powder 1 tBS
+Frying oil  
+                    </p>
+                </div>
+                <div class="recipe-meal-img">
+                    <img src="images/burger.png" alt=" ">
+                </div>
+            </div>
+          </div >
+        </div>    
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
