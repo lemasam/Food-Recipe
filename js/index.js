@@ -2,13 +2,16 @@ const searchBtn = document.getElementById("search-btn");
 
 const mealList = document.getElementById("meal");
 
-const mealDealContent = document.querySelector(".meal-deatails-content");
+const mealDetailsContent = document.querySelector(".meal-details-content");
 
 const repiceCloseBtn = document.getElementById("recipe-close-btn");
 
 //event listener
 searchBtn.addEventListener("click", getMealList);
 mealList.addEventListener("click", getMealRecipe);
+repiceCloseBtn.addEventListener("click", () => {
+  mealDetailsContent.parentElement.classList.remove("showRecipe");
+});
 
 function getMealList() {
   let searchInputText = document.getElementById("search-input").value.trim();
@@ -35,6 +38,11 @@ function getMealList() {
                         </div>
                     `;
         });
+
+    
+
+
+        mealList.classList.remove('notFound')
       } else {
         html = "Oops! No Meal Found";
         mealList.classList.add("notFound");
@@ -67,18 +75,18 @@ function getMealRecipe(e) {
 
 //model creation
 function mealRecipeModel(meal) {
-  console.log(meal);
   meal = meal[0];
-  html += `<h2 class="recipe-title">${meal.strMeal}</h2>
+  //   mealList.classList.add('hide')
+  let html = `<h2 class="recipe-title">${meal.strMeal}</h2>
                 <p class="recipe-category">${meal.strCategory}</p>
                 <div class="recipe-instruct">
-                    <h3>InstructionS</h3>
-                    <p>${meal.strIstructions} </p>
+                    <h3>Instructions:</h3>
+                    <p>${meal.strInstructions} </p>
                 </div>
                 <div class="recipe-meal-img">
                     <img src="${meal.strMealThumb}" alt=" "> 
                 </div>
                 `;
-  mealDealContent.innerHTML = html; 
-  mealDealContent.parentElement.classList.add("showRecipe");
+  mealDetailsContent.innerHTML = html;
+  mealDetailsContent.parentElement.classList.add("showRecipe");
 }
