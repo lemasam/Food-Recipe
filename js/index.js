@@ -4,12 +4,12 @@ const mealList = document.getElementById("meal");
 
 const mealDetailsContent = document.querySelector(".meal-details-content");
 
-const repiceCloseBtn = document.getElementById("recipe-close-btn");
+const recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 //event listener
 searchBtn.addEventListener("click", getMealList);
 mealList.addEventListener("click", getMealRecipe);
-repiceCloseBtn.addEventListener("click", () => {
+recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
 });
 
