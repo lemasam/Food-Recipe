@@ -55,7 +55,7 @@ function getMealList() {
 //getting  recipe of the meal
 function getMealRecipe(e) {
   e.preventDefault();
-  //console.log(m.target);
+  //console.log(e.target);
   if (e.target.classList.contains("recipe-btn")) {
     let mealItem = e.target.parentElement.parentElement;
     //console.log(mealItem);
@@ -63,8 +63,7 @@ function getMealRecipe(e) {
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
     )
       .then((response) => response.json())
-      .then(
-        (data) => mealRecipeModel(data.meals)
+      .then(data => mealRecipeModel(data.meals)
         // {
         // console.log(data);
 
@@ -88,5 +87,5 @@ function mealRecipeModel(meal) {
                 </div>
                 `;
   mealDetailsContent.innerHTML = html;
-  mealDetailsContent.parentElement.classList.add("showRecipe");
+  mealDetailsContent.parentElement.classList.add('showRecipe');
 }

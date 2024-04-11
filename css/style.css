@@ -140,7 +140,7 @@ body {
 .meal-details {
   top: 50%;
   left: 50%;
-
+    position: fixed;
   color: #fff;
   /* border-radius: 1rem; */
   background: var(--tenne-tawny);
@@ -181,6 +181,25 @@ body {
 .notFound {
   color: var(--tenne-tawny);
   font-size: 1.8rem;
+  text-align: center;
+}
+
+.showRecipe{
+    display: block;
+}
+.recipe-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
 }
 
 /* .hide {
