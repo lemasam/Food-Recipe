@@ -48,8 +48,8 @@ function getMealList() {
 function getMealRecipe(e) {
   e.preventDefault();
   //console.log(m.target);
-  if (m.target.classList.contains("recipe-btn")) {
-    let mealItem = m.target.parentElement.parentElement;
+  if (e.target.classList.contains("recipe-btn")) {
+    let mealItem = e.target.parentElement.parentElement;
     //console.log(mealItem);
     fetch(
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
