@@ -207,14 +207,10 @@ border-top-left-radius: 2rem;
 
 
 
-
-
-
-
 @media screen and (min-width:700px){
     #meal{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem
     } 
    
