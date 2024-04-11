@@ -51,7 +51,7 @@ function getMealRecipe(m){
         //console.log(mealItem);
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
         .then(response => response.json())
-        .then(data =>mealRecipeModel(data.meals)
+        .then(data => mealRecipeModel(data.meals)
         // {
         // console.log(data);
 
@@ -66,4 +66,6 @@ function getMealRecipe(m){
 function mealRecipeModel(meal){
     console.log(meal);
     meal = meal[0]
+    html += 
+
 }
