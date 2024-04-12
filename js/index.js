@@ -11,6 +11,8 @@ searchBtn.addEventListener("click", getMealList);
 
 mealList.addEventListener("click", getMealRecipe);
 
+
+
 recipeCloseButton.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
 });
