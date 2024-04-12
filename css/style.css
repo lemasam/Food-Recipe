@@ -171,19 +171,6 @@ body {
   margin: 2rem;
   background-color: #d65108;
 }
-
-.recipe-close-btn {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  font-size: 1rem;
-  background: whitesmoke;
-  border: none;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-}
-
 .recipe-meal-img img {
   width: 350px;
   height: 350px;
@@ -201,21 +188,6 @@ body {
 .showRecipe{
     display: block;
 }
-.recipe-close-btn{
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    font-size: 1.8rem;
-    background: #fff;
-    border: none;
-    width: 35px;
-    height: 35px;
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.9;
-}
-
 /* .hide {
     display: none;
     visibility: hidden;
