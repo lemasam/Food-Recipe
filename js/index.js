@@ -17,6 +17,7 @@ recipeCloseButton.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
 });
 
+//getting meal list thatmatches the ingredients
 function getMealList() {
   let searchInputText = document.getElementById("search-input").value.trim();
   //The trim method in JavaScript is a built-in string method that removes whitespace characters from the beginning and end of a string. The whitespace characters include spaces, tabs, and newline characters.
@@ -64,8 +65,7 @@ function getMealRecipe(e) {
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
     )
       .then((response) => response.json())
-      .then(
-        (data) => mealRecipeModel(data.meals)
+      .then(data => mealRecipeModel(data.meals)
         // {
         // console.log(data);
 
