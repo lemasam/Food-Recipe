@@ -8,7 +8,9 @@ const recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 //event listener
 searchBtn.addEventListener("click", getMealList);
+
 mealList.addEventListener("click", getMealRecipe);
+
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
 });
@@ -39,10 +41,7 @@ function getMealList() {
                     `;
         });
 
-    
-
-
-        mealList.classList.remove('notFound')
+        mealList.classList.remove("notFound");
       } else {
         html = "Oops! No Meal Found";
         mealList.classList.add("notFound");
@@ -63,7 +62,8 @@ function getMealRecipe(e) {
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
     )
       .then((response) => response.json())
-      .then(data => mealRecipeModel(data.meals)
+      .then(
+        (data) => mealRecipeModel(data.meals)
         // {
         // console.log(data);
 
@@ -87,5 +87,6 @@ function mealRecipeModel(meal) {
                 </div>
                 `;
   mealDetailsContent.innerHTML = html;
-  mealDetailsContent.parentElement.classList.add('showRecipe');
+  mealDetailsContent.parentElement.classList.add("showRecipe");
+  
 }

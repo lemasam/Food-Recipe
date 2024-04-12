@@ -1,4 +1,4 @@
-## PROJECT NAME:
+## PROJECT NAME:FOOD RECIPE APP
 
 This repository contains solution to SWEEK 1 CODE CHALLENGE in JavaScript.
 
@@ -12,7 +12,8 @@ Thereshiah Lema Samuel
 
 ## Description:
 
-It's a Javascript program that prompts user to enter values in below three challenges:
+It's a Javascript program that prompts user to search meal of they choice and click on recipe in order to get indtruction on ingredients needed for your meal.
+
 
 ## Resources
 
@@ -36,6 +37,7 @@ CSS
 
 github: Lema Samuel,
 email: thereshiah.samuel@student.moringaschool.com
+email: lemasam10@gmail.com
 
 ## license
 
