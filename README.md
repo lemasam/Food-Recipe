@@ -1,6 +1,6 @@
 ## PROJECT NAME:FOOD RECIPE APP
 
-This repository contains solution to SWEEK 1 CODE CHALLENGE in JavaScript.
+
 
 ### Date:
 
@@ -12,7 +12,10 @@ Thereshiah Lema Samuel
 
 ## Description:
 
-It's a Javascript program that prompts user to search meal of they choice and click on recipe in order to get indtruction on ingredients needed for your meal.
+It's a Javascript program that prompts user to search meal of they choice and click on recipe in order to get instruction on ingredients needed for your meal following below steps:
+1. Search for meal of your choice
+2. Click on recipe 
+3. Instruction will be given on how to prepare selected meal
 
 
 ## Resources
